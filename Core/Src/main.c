@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "app_main.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "cmsis_os2.h"
@@ -159,7 +160,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_CRYP_Init();
   /* USER CODE BEGIN 2 */
-
+  App_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */
